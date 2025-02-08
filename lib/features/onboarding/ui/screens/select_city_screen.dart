@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
+import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class SelectCityScreen extends StatefulWidget {
@@ -67,6 +68,7 @@ class _SelectCityScreenState extends State<SelectCityScreen> {
                       onTap: () {
                         selectedCity = index;
                         setState(() {});
+                        Navigator.pushNamed(context, OnboardingScreen.name);
                       },
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 14),

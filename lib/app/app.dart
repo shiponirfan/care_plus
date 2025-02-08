@@ -1,4 +1,5 @@
 import 'package:care_plus/app/app_theme_data.dart';
+import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/select_city_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,8 @@ class CarePlusApp extends StatelessWidget {
           route = const SplashScreen();
         } else if (settings.name == SelectCityScreen.name) {
           route = const SelectCityScreen();
+        } else if (settings.name == OnboardingScreen.name) {
+          route = const OnboardingScreen();
         }
         return MaterialPageRoute(
           builder: (context) {

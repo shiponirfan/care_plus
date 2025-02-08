@@ -5,11 +5,20 @@ import 'package:google_fonts/google_fonts.dart';
 class AppThemeData {
   static ThemeData get lightThemeData {
     return ThemeData(
-      colorSchemeSeed: AppColors.themeColor,
+        colorSchemeSeed: AppColors.themeColor,
         fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: const AppBarTheme(
           scrolledUnderElevation: 0,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.themeColor,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5),
+          ),
+          minimumSize: const Size(double.infinity, 50),
+        )),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
