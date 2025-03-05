@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
+import 'package:care_plus/features/auth/ui/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -20,7 +21,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     Size mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
           PageView.builder(
@@ -158,6 +158,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void _moveToNextScreen() {
-    // Navigator.pushNamed(context, '/select-city');
+    Navigator.pushNamedAndRemoveUntil(
+      context,
+      LoginScreen.name,
+      (route) => false,
+    );
   }
 }

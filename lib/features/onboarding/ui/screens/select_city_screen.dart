@@ -18,6 +18,7 @@ class _SelectCityScreenState extends State<SelectCityScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
         backgroundColor: AppColors.themeColor,
         title: const Text(

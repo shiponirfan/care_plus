@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AppThemeData {
   static ThemeData get lightThemeData {
     return ThemeData(
+      scaffoldBackgroundColor: Colors.white,
         colorSchemeSeed: AppColors.themeColor,
         fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: const AppBarTheme(
@@ -28,7 +29,8 @@ class AppThemeData {
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 0, vertical: 18),
           hintStyle: const TextStyle(color: AppColors.secondaryTextColor),
-        ));
+        )
+    );
   }
 
   static ThemeData get darkThemeData {
