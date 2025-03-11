@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/assets_path.dart';
+import 'package:care_plus/features/common/ui/screens/main_bottom_navbar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -70,7 +71,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/otp');
+                Navigator.pushNamed(context, MainBottomNavbarScreen.name);
               },
               child: const Text(
                 'Continue',

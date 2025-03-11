@@ -2,6 +2,8 @@ import 'package:care_plus/app/app_theme_data.dart';
 import 'package:care_plus/features/auth/ui/screens/login_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/number_input_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/otp_verification_screen.dart';
+import 'package:care_plus/features/common/ui/screens/main_bottom_navbar_screen.dart';
+import 'package:care_plus/features/home/ui/screens/home_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/select_city_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/splash_screen.dart';
@@ -31,6 +33,10 @@ class CarePlusApp extends StatelessWidget {
           route = const NumberInputScreen();
         }else if (settings.name == OtpVerificationScreen.name) {
           route = const OtpVerificationScreen();
+        }else if (settings.name == MainBottomNavbarScreen.name) {
+          route = const MainBottomNavbarScreen();
+        }else if (settings.name == HomeScreen.name) {
+          route = const HomeScreen();
         }
         return MaterialPageRoute(
           builder: (context) {
