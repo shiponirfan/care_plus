@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
+import 'package:care_plus/features/home/ui/widgets/drawer_menu_widget.dart';
 import 'package:care_plus/features/home/ui/widgets/home_card_view_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -46,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
       ),
-      drawer: const Drawer(),
+      drawer: DrawerMenuWidget(),
       body: Stack(
         children: [
           SingleChildScrollView(
