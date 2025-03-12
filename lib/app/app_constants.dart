@@ -36,4 +36,141 @@ class AppConstants {
       'subtitle': 'Get full satisfaction of your Problems'
     },
   ];
+
+  static List<Map> categoryList = [
+    {
+      'img': 'assets/images/heart.svg',
+      'title': 'Heart Issue',
+    },
+    {
+      'img': 'assets/images/launch.svg',
+      'title': 'Lung Issue',
+    },
+    {
+      'img': 'assets/images/cancer.svg',
+      'title': 'Cancer Issue',
+    },
+    {
+      'img': 'assets/images/sugar.svg',
+      'title': 'Sugar Issue',
+    },
+  ];
+
+  static List sliderImg = [
+    'assets/images/slider_img1.png',
+    'assets/images/slider_img1.png',
+    'assets/images/slider_img1.png',
+    'assets/images/slider_img1.png',
+  ];
+
+  static List<Map> nearDoctorList = [
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+    {
+      'img': 'assets/images/doctor1.png',
+      'title': 'Dr. Manish Chutake',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 4.5,
+    },
+    {
+      'img': 'assets/images/doctor2.png',
+      'title': 'Dr. Priyanka Rathi',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 5.0,
+    },
+    {
+      'img': 'assets/images/doctor3.png',
+      'title': 'Dr. Kunal Vaidya',
+      'subtitle': 'BAMS, MBBS, MD, DDLT, Psychiatrist',
+      'rating': 3.0,
+    },
+  ];
 }

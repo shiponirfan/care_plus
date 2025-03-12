@@ -5,11 +5,18 @@ import 'package:google_fonts/google_fonts.dart';
 class AppThemeData {
   static ThemeData get lightThemeData {
     return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.white,
         colorSchemeSeed: AppColors.themeColor,
         fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: const AppBarTheme(
           scrolledUnderElevation: 0,
+          backgroundColor: AppColors.themeColor,
+          titleTextStyle: TextStyle(
+            color: Colors.white,
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+          foregroundColor: Colors.white,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
@@ -29,8 +36,7 @@ class AppThemeData {
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 0, vertical: 18),
           hintStyle: const TextStyle(color: AppColors.secondaryTextColor),
-        )
-    );
+        ));
   }
 
   static ThemeData get darkThemeData {
