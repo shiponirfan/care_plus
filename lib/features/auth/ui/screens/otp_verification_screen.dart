@@ -74,7 +74,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                 Navigator.pushNamed(context, MainBottomNavbarScreen.name);
               },
               child: const Text(
-                'Continue',
+                'Verify',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,

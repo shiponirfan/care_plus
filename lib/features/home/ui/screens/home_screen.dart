@@ -2,6 +2,7 @@ import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
 import 'package:care_plus/features/home/ui/widgets/drawer_menu_widget.dart';
 import 'package:care_plus/features/home/ui/widgets/home_card_view_widget.dart';
+import 'package:care_plus/features/search/ui/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -44,10 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+          IconButton(onPressed: () {
+            Navigator.pushNamed(context, SearchScreen.name);
+          }, icon: const Icon(Icons.search_outlined)),
         ],
       ),
-      drawer: DrawerMenuWidget(),
+      drawer: const DrawerMenuWidget(),
       body: Stack(
         children: [
           SingleChildScrollView(

@@ -7,6 +7,7 @@ import 'package:care_plus/features/home/ui/screens/home_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/select_city_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/splash_screen.dart';
+import 'package:care_plus/features/search/ui/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 class CarePlusApp extends StatelessWidget {
@@ -37,6 +38,8 @@ class CarePlusApp extends StatelessWidget {
           route = const MainBottomNavbarScreen();
         }else if (settings.name == HomeScreen.name) {
           route = const HomeScreen();
+        }else if (settings.name == SearchScreen.name) {
+          route = const SearchScreen();
         }
         return MaterialPageRoute(
           builder: (context) {
