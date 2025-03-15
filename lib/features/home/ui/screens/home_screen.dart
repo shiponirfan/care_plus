@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
+import 'package:care_plus/features/doctors/ui/screens/doctors_list_screen.dart';
 import 'package:care_plus/features/home/ui/widgets/drawer_menu_widget.dart';
 import 'package:care_plus/features/home/ui/widgets/home_card_view_widget.dart';
 import 'package:care_plus/features/search/ui/screens/search_screen.dart';
@@ -70,7 +71,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 _buildSectionHeading(
                   title: 'Doctors Near By You',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, DoctorsListScreen.name);
+                  },
                 ),
                 const SizedBox(
                   height: 20,
@@ -232,14 +235,14 @@ class _HomeScreenState extends State<HomeScreen> {
         scrollDirection: Axis.horizontal,
         clipBehavior: Clip.none,
         itemBuilder: (context, index) {
-          Map item = AppConstants.nearDoctorList[index];
+          Map item = AppConstants.doctorList[index];
           return HomeCardViewWidget(
               img: item['img'],
               title: item['title'],
               subtitle: item['subtitle'],
               rating: item['rating']);
         },
-        itemCount: AppConstants.nearDoctorList.length,
+        itemCount: AppConstants.doctorList.length,
         separatorBuilder: (BuildContext context, int index) {
           return const SizedBox(
             width: 20,
@@ -256,14 +259,14 @@ class _HomeScreenState extends State<HomeScreen> {
         scrollDirection: Axis.horizontal,
         clipBehavior: Clip.none,
         itemBuilder: (context, index) {
-          Map item = AppConstants.nearDoctorList[index];
+          Map item = AppConstants.doctorList[index];
           return HomeCardViewWidget(
               img: item['img'],
               title: item['title'],
               subtitle: item['subtitle'],
               rating: item['rating']);
         },
-        itemCount: AppConstants.nearDoctorList.length,
+        itemCount: AppConstants.doctorList.length,
         separatorBuilder: (BuildContext context, int index) {
           return const SizedBox(
             width: 20,

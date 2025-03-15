@@ -3,6 +3,8 @@ import 'package:care_plus/features/auth/ui/screens/login_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/number_input_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/otp_verification_screen.dart';
 import 'package:care_plus/features/common/ui/screens/main_bottom_navbar_screen.dart';
+import 'package:care_plus/features/doctors/ui/screens/doctors_list_screen.dart';
+import 'package:care_plus/features/doctors/ui/screens/doctors_profile_screen.dart';
 import 'package:care_plus/features/home/ui/screens/home_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/select_city_screen.dart';
@@ -40,6 +42,10 @@ class CarePlusApp extends StatelessWidget {
           route = const HomeScreen();
         }else if (settings.name == SearchScreen.name) {
           route = const SearchScreen();
+        }else if (settings.name == DoctorsListScreen.name) {
+          route = const DoctorsListScreen();
+        }else if (settings.name == DoctorsProfileScreen.name) {
+          route = const DoctorsProfileScreen();
         }
         return MaterialPageRoute(
           builder: (context) {
