@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/app/app_constants.dart';
+import 'package:care_plus/features/booking/ui/screens/booking_screen.dart';
 import 'package:care_plus/features/doctors/widgets/doctor_list_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -43,7 +44,9 @@ class _DoctorsProfileScreenState extends State<DoctorsProfileScreen> {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(24))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, BookingScreen.name);
+                    },
                     child: const Text('Book')),
               )
             ],

@@ -2,6 +2,7 @@ import 'package:care_plus/app/app_theme_data.dart';
 import 'package:care_plus/features/auth/ui/screens/login_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/number_input_screen.dart';
 import 'package:care_plus/features/auth/ui/screens/otp_verification_screen.dart';
+import 'package:care_plus/features/booking/ui/screens/booking_screen.dart';
 import 'package:care_plus/features/common/ui/screens/main_bottom_navbar_screen.dart';
 import 'package:care_plus/features/doctors/ui/screens/doctors_list_screen.dart';
 import 'package:care_plus/features/doctors/ui/screens/doctors_profile_screen.dart';
@@ -46,6 +47,8 @@ class CarePlusApp extends StatelessWidget {
           route = const DoctorsListScreen();
         }else if (settings.name == DoctorsProfileScreen.name) {
           route = const DoctorsProfileScreen();
+        } else if (settings.name == BookingScreen.name) {
+          route = const BookingScreen();
         }
         return MaterialPageRoute(
           builder: (context) {

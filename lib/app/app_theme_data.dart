@@ -22,6 +22,9 @@ class AppThemeData {
             style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.themeColor,
           foregroundColor: Colors.white,
+          textStyle: const TextStyle(
+            fontWeight: FontWeight.w600,
+          ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(5),
           ),
@@ -34,7 +37,7 @@ class AppThemeData {
           fillColor: Colors.white,
           filled: true,
           contentPadding:
-              const EdgeInsets.symmetric(horizontal: 0, vertical: 18),
+              const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
           hintStyle: const TextStyle(color: AppColors.secondaryTextColor),
         ));
   }
