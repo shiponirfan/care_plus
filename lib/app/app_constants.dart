@@ -207,7 +207,8 @@ class AppConstants {
     ],
     'title': 'Dr. Manish Chutake',
     'feedback': 'The service of the Dr. Manish Chutake and staff is Good.',
-    'address': 'Plot No. 123, Behind Somalwada Highschool,Shankar Nagar,Rangpur',
+    'address':
+        'Plot No. 123, Behind Somalwada Highschool,Shankar Nagar,Rangpur',
     'designation': 'Psychiatrist',
     'subtitle': 'BAMS, MBBS, MD, DDLT',
     'experience': 14,
@@ -216,4 +217,24 @@ class AppConstants {
     'rating': 4.5,
     'location': 'Rangpur',
   };
+
+  static List cards = [
+    'assets/images/Mastercard.png',
+    'assets/images/maestro.png',
+    'assets/images/visa.png',
+  ];
+  static List<Map> wallet = [
+    {
+      'img': 'assets/images/phone-pe.png',
+      'title': 'Phone pay',
+    },
+    {
+      'img': 'assets/images/Google-Pay.png',
+      'title': 'Google pay',
+    },
+    {
+      'img': 'assets/images/paypal.png',
+      'title': 'Pay pal',
+    },
+  ];
 }

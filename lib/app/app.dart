@@ -10,6 +10,9 @@ import 'package:care_plus/features/home/ui/screens/home_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/select_city_screen.dart';
 import 'package:care_plus/features/onboarding/ui/screens/splash_screen.dart';
+import 'package:care_plus/features/payment/ui/screens/card_screen.dart';
+import 'package:care_plus/features/payment/ui/screens/pay_now_screen.dart';
+import 'package:care_plus/features/payment/ui/screens/payment_successful_screen.dart';
 import 'package:care_plus/features/search/ui/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -35,20 +38,26 @@ class CarePlusApp extends StatelessWidget {
           route = const LoginScreen();
         } else if (settings.name == NumberInputScreen.name) {
           route = const NumberInputScreen();
-        }else if (settings.name == OtpVerificationScreen.name) {
+        } else if (settings.name == OtpVerificationScreen.name) {
           route = const OtpVerificationScreen();
-        }else if (settings.name == MainBottomNavbarScreen.name) {
+        } else if (settings.name == MainBottomNavbarScreen.name) {
           route = const MainBottomNavbarScreen();
-        }else if (settings.name == HomeScreen.name) {
+        } else if (settings.name == HomeScreen.name) {
           route = const HomeScreen();
-        }else if (settings.name == SearchScreen.name) {
+        } else if (settings.name == SearchScreen.name) {
           route = const SearchScreen();
-        }else if (settings.name == DoctorsListScreen.name) {
+        } else if (settings.name == DoctorsListScreen.name) {
           route = const DoctorsListScreen();
-        }else if (settings.name == DoctorsProfileScreen.name) {
+        } else if (settings.name == DoctorsProfileScreen.name) {
           route = const DoctorsProfileScreen();
         } else if (settings.name == BookingScreen.name) {
           route = const BookingScreen();
+        } else if (settings.name == PayNowScreen.name) {
+          route = const PayNowScreen();
+        } else if (settings.name == CardScreen.name) {
+          route = const CardScreen();
+        } else if (settings.name == PaymentSuccessfulScreen.name) {
+          route = const PaymentSuccessfulScreen();
         }
         return MaterialPageRoute(
           builder: (context) {

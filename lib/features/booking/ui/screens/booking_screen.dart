@@ -1,5 +1,6 @@
 import 'package:care_plus/app/app_colors.dart';
 import 'package:care_plus/features/common/ui/widgets/custom_app_bar.dart';
+import 'package:care_plus/features/payment/ui/screens/pay_now_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -96,7 +97,9 @@ class _BookingScreenState extends State<BookingScreen> {
               height: 50,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, PayNowScreen.name);
+              },
               child: const Text('Make a Payment'),
             ),
           ],
